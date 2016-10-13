@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/charity_image_type"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:tint="@color/charity_item"
+            android:src="@drawable/ic_attach_money_white_36dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="70"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mini_spending_category_name_and_percentage"
+                android:text="Fast food (2.3%)"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:tint="@color/green"
+            android:src="@drawable/ic_attach_money_black_18dp"/>
+        <TextView
+            android:id="@+id/mini_spending_category_amount"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="301.32"/>
+    </LinearLayout>
+
+</LinearLayout>
